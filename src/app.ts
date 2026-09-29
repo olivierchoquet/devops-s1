@@ -18,5 +18,9 @@ app.get('/develop', (req: Request, res: Response) => {
   res.send("Bonjour develop");
 });
 
+app.get('/test', (req: Request, res: Response) => {
+  res.send("Bonjour test");
+});
+
 // use the controller to use the route
 app.use('/doctors', doctorsController);
